@@ -1,0 +1,81 @@
+\documentclass[final,1p,times]{elsarticle}
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{epsfig}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+% correct bad hyphenation here
+\hyphenation{}
+
+\journal{Journal of Transportation Research Part C: Emerging Technologies}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Indic@: a Cloud-based system for the simulation and testing of the dynamic
+pantograph–catenary interaction
+\tnoteref{funding}}
+
+\tnotetext[funding]{Research partially supported by project.}
+
+\author[albacete]{Jose A. Mateo\corref{corresponding_author}}
+\cortext[corresponding_author]{The corresponding author.}
+\ead{JoseAntonio.Mateo@uclm.es}
+
+\author[albacete]{Enrique Arias}
+\ead{Enrique.Arias@uclm.es@uclm.es}
+
+\author[albacete]{Tomas Rojo}
+\ead{Tomas.Rojo@uclm.es}
+
+\author[albacete]{Fernando Cuartero}
+\ead{Fernando.Cuartero@uclm.es}
+
+\address[albacete]{Universidad de Castilla-La Mancha, Albacete, Spain, 02071.}
+
+\begin{abstract}
+In this paper, we present a Cloud-based system for simulating and 
+testing the dynamic pantograph-catenary interaction.
+This high-throughput system called Indic@ represents a disruptive movement in the way 
+the catenary-pantograph interaction software is
+delivered to the final user (engineering companies). From now, we move 
+from desktop applications to Software as a Service (SaaS), 
+where users have to forget initial setup costs, paying only 
+for the use they consume. Moreover, we have implemented a web platform to
+automatize the creation of test scenarios just providing the initial and final
+value of the parameter one want to study. In addition to this, these test are run in
+a private cloud deployed using the framework OpenNebula and KVM, where the deployment of the
+virtual machines and the maintenance of the computing infrastructure 
+is completely transparent to the final user. 
+
+\end{abstract}
+
+\begin{keyword}
+%% keywords here, in the form: keyword \sep keyword
+ Catenary-pantograph interaction \sep Cloud Computing \sep OpenNebula \sep Simulation \sep Software as a Service (SaaS) \sep High-throughput
+\end{keyword}
+
+\end{frontmatter}
+
+\section{Introduction}\label{sec:introduction}
+\input{Intro}
+
+\section{Background}\label{sec:background}
+\input{Background}
+\section{Conclusions and Future Work}\label{sec:conclusions}
+\input{Conclusions}
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+\bibliographystyle{elsarticle-num}
+\bibliography{bibliografia}
+
+\end{document}
+\endinput
